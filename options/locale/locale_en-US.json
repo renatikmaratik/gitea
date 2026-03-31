@@ -2348,6 +2348,7 @@
   "repo.settings.web_hook_name_dingtalk": "DingTalk",
   "repo.settings.web_hook_name_telegram": "Telegram",
   "repo.settings.web_hook_name_matrix": "Matrix",
+  "repo.settings.web_hook_name_max": "MAX Messenger",
   "repo.settings.web_hook_name_msteams": "Microsoft Teams",
   "repo.settings.web_hook_name_feishu_or_larksuite": "Feishu / Lark Suite",
   "repo.settings.web_hook_name_feishu": "Feishu",

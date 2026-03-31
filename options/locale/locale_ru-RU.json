@@ -1884,6 +1884,7 @@
   "repo.settings.slack_domain": "Домен",
   "repo.settings.slack_channel": "Канал",
   "repo.settings.add_web_hook_desc": "Интегрировать <a target=\"_blank\" rel=\"noreferrer\" href=\"%s\">%s</a> в ваш репозиторий.",
+  "repo.settings.web_hook_name_max": "MAX Мессенджер",
   "repo.settings.packagist_username": "Имя пользователя Packagist",
   "repo.settings.packagist_api_token": "Токен API",
   "repo.settings.packagist_package_url": "Ссылка на пакет Packagist",

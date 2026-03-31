@@ -356,6 +356,18 @@ func (f *NewMatrixHookForm) Validate(req *http.Request, errs binding.Errors) bin
 	return middleware.Validate(errs, ctx.Data, f, ctx.Locale)
 }
 
+// NewMaxHookForm form for creating max hook
+type NewMaxHookForm struct {
+	PayloadURL string `binding:"Required;ValidUrl"`
+	WebhookForm
+}
+
+// Validate validates the fields
+func (f *NewMaxHookForm) Validate(req *http.Request, errs binding.Errors) binding.Errors {
+	ctx := context.GetValidateContext(req)
+	return middleware.Validate(errs, ctx.Data, f, ctx.Locale)
+}
+
 // NewMSTeamsHookForm form for creating MS Teams hook
 type NewMSTeamsHookForm struct {
 	PayloadURL string `binding:"Required;ValidUrl"`
