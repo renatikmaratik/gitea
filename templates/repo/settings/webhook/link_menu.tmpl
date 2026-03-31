@@ -39,6 +39,10 @@
 		{{template "shared/webhook/icon" (dict "HookType" "matrix" "Size" $size)}}
 		{{ctx.Locale.Tr "repo.settings.web_hook_name_matrix"}}
 	</a>
+	<a class="item" href="{{.BaseLinkNew}}/max/new">
+		{{template "shared/webhook/icon" (dict "HookType" "max" "Size" $size)}}
+		{{ctx.Locale.Tr "repo.settings.web_hook_name_max"}}
+	</a>
 	<a class="item" href="{{.BaseLinkNew}}/wechatwork/new">
 		{{template "shared/webhook/icon" (dict "HookType" "wechatwork" "Size" $size)}}
 		{{ctx.Locale.Tr "repo.settings.web_hook_name_wechatwork"}}

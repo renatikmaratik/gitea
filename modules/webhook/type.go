@@ -126,6 +126,7 @@ const (
 	MSTEAMS    HookType = "msteams"
 	FEISHU     HookType = "feishu"
 	MATRIX     HookType = "matrix"
+	MAX        HookType = "max"
 	WECHATWORK HookType = "wechatwork"
 	PACKAGIST  HookType = "packagist"
 )

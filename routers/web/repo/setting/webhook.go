@@ -465,6 +465,27 @@ func matrixHookParams(ctx *context.Context) webhookParams {
 	}
 }
 
+// MaxHooksNewPost response for creating MAX webhook
+func MaxHooksNewPost(ctx *context.Context) {
+	createWebhook(ctx, maxHookParams(ctx))
+}
+
+// MaxHooksEditPost response for editing MAX webhook
+func MaxHooksEditPost(ctx *context.Context) {
+	editWebhook(ctx, maxHookParams(ctx))
+}
+
+func maxHookParams(ctx *context.Context) webhookParams {
+	form := web.GetForm(ctx).(*forms.NewMaxHookForm)
+
+	return webhookParams{
+		Type:        webhook_module.MAX,
+		URL:         form.PayloadURL,
+		ContentType: webhook.ContentTypeJSON,
+		WebhookForm: form.WebhookForm,
+	}
+}
+
 // MSTeamsHooksNewPost response for creating MSTeams webhook
 func MSTeamsHooksNewPost(ctx *context.Context) {
 	createWebhook(ctx, mSTeamsHookParams(ctx))
